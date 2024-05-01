@@ -271,7 +271,10 @@ body {
   justify-content: space-between; /* Distributes space, pushing content and image apart */
   background-color: #1f574e; /* Background color */
   height: 100vh;
-  padding: 80px; /* Set the height to fill the viewport */
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+  /* Set the height to fill the viewport */
   /* Optional: Adds some padding around the section */
   /* Includes padding in height calculation */
 }
@@ -288,8 +291,8 @@ body {
 }
 
 .image-column {
-  width: 860px; /* Fixed width as specified */
-  height: 888px; /* Fixed height as specified */
+  width: 800px; /* Fixed width as specified */
+  height: 800px; /* Fixed height as specified */
   display: flex;
   justify-content: center; /* Center image horizontally within the column */
   align-items: center; /* Center image vertically within the column */
@@ -306,7 +309,7 @@ body {
 
 /* Additional styling for headings and paragraphs */
 .leadership-section h2 {
-  display: inline;
+  /* display: inline; */
   width: auto;
   height: 67px;
   color: #fff; /* White text color */
@@ -317,7 +320,7 @@ body {
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
-  padding-bottom: 80px; /* Spacing below the headings */
+  padding-bottom: 40px; /* Spacing below the headings */
 }
 .leadership-section h3 {
   color: #fff; /* White text color */
