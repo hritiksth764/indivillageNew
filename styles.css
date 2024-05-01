@@ -117,7 +117,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-left: 80px;
-  margin-top: -160px; /* Centers content vertically */
+  /* Centers content vertically */
 }
 
 .text-section h1 {
@@ -280,7 +280,8 @@ body {
   flex: 1; /* Takes the remaining space after the image column size is set */
   display: flex;
   flex-direction: column;
-  padding-right: 20px;
+  max-width: 810px;
+  /* padding-right: 20px; */
 
   /* Adds spacing between the content and image */
   /* Adds scroll to content if it exceeds the container's height */
