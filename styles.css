@@ -306,12 +306,13 @@ body {
 
 /* Additional styling for headings and paragraphs */
 .leadership-section h2 {
-  width: 810px;
+  display: inline;
+  width: auto;
   height: 67px;
   color: #fff; /* White text color */
   margin: 0 0 10px 0;
   font-family: "Exo 2";
-  font-size: 56px;
+  font-size: 46px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
