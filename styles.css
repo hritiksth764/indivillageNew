@@ -253,7 +253,7 @@ body {
 }
 
 .leadership-section .image-column {
-  max-width: 50%;
+  width: 100%;
   text-align: right;
   padding-right: 60px;
   padding-top: 50px;
