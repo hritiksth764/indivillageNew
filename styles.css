@@ -270,8 +270,9 @@ body {
   align-items: stretch; /* Ensures that children stretch to fill the container */
   justify-content: space-between; /* Distributes space, pushing content and image apart */
   background-color: #1f574e; /* Background color */
-  height: 100vh; /* Set the height to fill the viewport */
-  padding: 20px; /* Optional: Adds some padding around the section */
+  height: 100vh;
+  padding: 80px; /* Set the height to fill the viewport */
+  /* Optional: Adds some padding around the section */
   /* Includes padding in height calculation */
 }
 
@@ -280,8 +281,8 @@ body {
   display: flex;
   flex-direction: column;
   padding-right: 20px;
-  padding-top: 40px;
-  padding-left: 60px; /* Adds spacing between the content and image */
+
+  /* Adds spacing between the content and image */
   /* Adds scroll to content if it exceeds the container's height */
 }
 
@@ -292,7 +293,7 @@ body {
   justify-content: center; /* Center image horizontally within the column */
   align-items: center; /* Center image vertically within the column */
   overflow: hidden;
-  padding: 40px; /* Prevents overflow of the image */
+  /* Prevents overflow of the image */
 }
 
 .image-column img {
