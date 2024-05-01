@@ -292,7 +292,7 @@ body {
   display: flex;
   justify-content: center; /* Center image horizontally within the column */
   align-items: center; /* Center image vertically within the column */
-  overflow: hidden;
+
   /* Prevents overflow of the image */
 }
 
@@ -305,6 +305,8 @@ body {
 
 /* Additional styling for headings and paragraphs */
 .leadership-section h2 {
+  width: 810px;
+  height: 67px;
   color: #fff; /* White text color */
   margin: 0 0 10px 0;
   font-family: "Exo 2";
