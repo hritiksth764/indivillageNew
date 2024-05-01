@@ -156,11 +156,11 @@ body {
 
 .image-section img {
   width: 940px; /* Full width of the section */
-  height: 905px; /* Maintain aspect ratio */
+  height: 855px; /* Maintain aspect ratio */
   max-height: 100%; /* Limit height to the container */
 }
 
-/* LEADERSHIP SECTION */
+/* LEADERSHIP SECTION 
 
 .leadership-section {
   display: flex;
@@ -179,7 +179,7 @@ body {
 
   align-items: flex-start;
   padding-top: 80px; /* Align content to start from the top */
-  /* Add padding to the top */
+/* Add padding to the top 
 }
 
 .leadership-section .content h2 {
@@ -228,7 +228,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 33px;
-  padding-bottom: 20px; /* 165% */
+  padding-bottom: 20px; /* 165% 
 }
 .leadership-section .paragraph2 p {
   width: 536px;
@@ -238,7 +238,7 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 33px; /* 165% */
+  line-height: 33px; /* 165% 
 }
 .leadership-section .read-more {
   display: block;
@@ -263,4 +263,87 @@ body {
   width: 860px;
   height: 888px;
   object-fit: contain;
+}
+*/
+.leadership-section {
+  display: flex;
+  align-items: stretch; /* Ensures that children stretch to fill the container */
+  justify-content: space-between; /* Distributes space, pushing content and image apart */
+  background-color: #1f574e; /* Background color */
+  height: 100vh; /* Set the height to fill the viewport */
+  padding: 20px; /* Optional: Adds some padding around the section */
+  /* Includes padding in height calculation */
+}
+
+.content-column {
+  flex: 1; /* Takes the remaining space after the image column size is set */
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-left: 60px; /* Adds spacing between the content and image */
+  /* Adds scroll to content if it exceeds the container's height */
+}
+
+.image-column {
+  width: 860px; /* Fixed width as specified */
+  height: 888px; /* Fixed height as specified */
+  display: flex;
+  justify-content: center; /* Center image horizontally within the column */
+  align-items: center; /* Center image vertically within the column */
+  overflow: hidden;
+  padding: 40px; /* Prevents overflow of the image */
+}
+
+.image-column img {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Ensures the image does not exceed the container's height */
+  object-fit: contain; /* Ensures the image is resized properly to fit within the dimensions without being cropped */
+}
+
+/* Additional styling for headings and paragraphs */
+.leadership-section h2 {
+  color: #fff; /* White text color */
+  margin: 0 0 10px 0;
+  font-family: "Exo 2";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 80px; /* Spacing below the headings */
+}
+.leadership-section h3 {
+  color: #fff; /* White text color */
+  margin: 0 0 10px 0;
+  color: rgba(255, 255, 255, 0.75);
+
+  font-family: "Exo 2";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 40px;
+}
+
+.leadership-section p {
+  color: #fff; /* White text color */
+  line-height: 1.6; /* Adjust line height for better readability */
+
+  width: 568px;
+  height: 197px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  padding-bottom: 20px; /* 165%  /* Space below paragraphs */
+}
+
+.leadership-section .read-more {
+  color: #faa22a; /* Color for 'Read More' links */
+  text-decoration: none;
+  /* Remove underline from links */
 }
