@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Full Height Flexbox Layout</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="image.png"
+        alt="Company Logo"
+        class="logo"
+        onclick="handleLogoClick()"
+      />
+      <div class="hamburger-icon" onclick="toggleNav()">☰</div>
+    </header>
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <a href="index.html#impact-overview-section" onclick="toggleNav()"
+          ><span class="menu-number">01</span> WHAT DID WE DO THIS YEAR</a
+        >
+        <a href="index.html#TechHerForward" onclick="toggleNav()"
+          ><span class="menu-number">02</span> TECH HER FORWARD</a
+        >
+        <a href="index.html#StorytellingSaturday" onclick="toggleNav()"
+          ><span class="menu-number">03</span> STORYTELLING SATURDAY</a
+        >
+
+        <a href="index.html#ArtClass" onclick="toggleNav()"
+          ><span class="menu-number">04</span> SATURDAY ART CLASS<br
+        /></a>
+        <a href="index.html#RuralYouth" onclick="toggleNav()"
+          ><span class="menu-number">05</span> RURAL YOUTH SKILLING</a
+        >
+        <a href="index.html#WomenTech" onclick="toggleNav()"
+          ><span class="menu-number">06</span> ALL WOMEN TECH CENTRES</a
+        >
+        <a href="index.html#MilestoneAndMemoir" onclick="toggleNav()"
+          ><span class="menu-number">07</span> 2023: Milestones & Memoirs</a
+        >
+        <a
+          href="http://www.indivillagefoundation.org/about-us/"
+          target="_blank"
+          onclick="toggleNav()"
+          ><span class="menu-number">08</span> About us</a
+        >
+      </div>
+    </div>
+    <div class="container">
+      <div class="text-section">
+        <h1>annual impact report</h1>
+        <h2>2023-24</h2>
+      </div>
+      <div class="image-section">
+        <img src="Cover Image (1).png" alt="Descriptive Image" />
+      </div>
+    </div>
+    <section class="leadership-section" data-aos="fade-down">
+      <div class="content-column">
+        <div class="content">
+          <h2>Message from Leadership</h2>
+          <div class="paragraph">
+            <h3>DIRECTOR</h3>
+            <p>
+              I am deeply honoured to present our annual impact report,
+              reflecting on the year 2023 to 2024. This year has been a
+              testament to our unwavering commitment, remarkable growth,
+              formidable challenges and inspiring achievements, propelling
+              IndiVillage Foundation to new heights.
+            </p>
+            <a
+              href="director.html"
+              class="read-more"
+              onclick="handleReadMoreClick()"
+              >Read More</a
+            >
+          </div>
+          <div class="paragraph2">
+            <h3>HEAD OF OPERATIONS</h3>
+            <p>
+              This year at IndiVillage Foundation has been marked by remarkable
+              growth, and a significant portion of that success can be
+              attributed to our incredible team, <br />volunteers and partners.
+            </p>
+
+            <a href="hod.html" class="read-more" onclick="handleReadMoreClick()"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="image-column">
+        <img src="image copy.png" alt="Leadership Image" />
+      </div>
+    </section>
+    <script>
+      function toggleNav() {
+        var overlay = document.getElementById("myNav");
+        if (overlay.style.transform === "translateX(0%)") {
+          overlay.style.transform = "translateX(100%)";
+        } else {
+          overlay.style.transform = "translateX(0%)";
+        }
+      }
+      function redirectToDirector() {
+        window.location.href = "director.html";
+      }
+      function handleLogoClick() {
+        if (window.location.pathname !== "/index.html") {
+          window.location.href = "/index.html";
+        } else {
+          // Smooth scroll to the top of the page
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+      }
+      function redirectToArtClass() {
+        window.location.href = "artClass.html";
+      }
+      function navigateToTechForward() {
+        // Use JavaScript to navigate to the desired page
+        window.location.href = "techForward.html";
+      }
+
+      function pauseVideo() {
+        var video = document.getElementById("videoFrame");
+        video.contentWindow.postMessage(
+          '{"event":"command","func":"pauseVideo","args":""}',
+          "*"
+        );
+      }
+      function handleReadMoreClick() {
+        window.location.href = "director.html";
+      }
+
+      function handleReadMoreClick() {
+        window.location.href = "hod.html";
+      }
+      function handleReadMoreClick() {
+        window.location.href = "storytelling.html";
+      }
+      function redirectToArtClass() {
+        window.location.href = "artClass.html";
+      }
+      function redirectToRuralYouth() {
+        window.location.href = "ruralYouth.html";
+      }
+      function redirectToWomenTech() {
+        window.location.href = "womenTech.html";
+      }
+
+      // Pause the video when the page is loaded
+      window.addEventListener("load", function () {
+        pauseVideo();
+      });
+    </script>
+  </body>
+</html>

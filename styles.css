@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+
+  /* font-family: Arial, sans-serif; */
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center; /* Make the header fixed to the top */
+  width: 100%; /* Full width */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  /* Adjust the horizontal padding as needed */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  background-color: transparent; /* Optional: Background color for the header */
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.logo {
+  width: 92px;
+  height: 57px;
+  flex-shrink: 0;
+  padding-top: 15px;
+  padding-left: 80px;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  padding-top: 15px;
+  padding-right: 73px;
+}
+
+/* Overlay style */
+.overlay {
+  transform: translateX(100%); /* Start off screen */
+  width: 50%; /* Or whatever width you desire */
+  height: 100%; /* Full height */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1; /* Make sure it's above other content */
+  background: #282828; /* Background color */
+  transition: transform 0.5s ease; /* Smooth transition for opening/closing */
+  /* Other styles... */
+}
+
+/* Style for the menu items in the overlay */
+.overlay-content {
+  padding-top: 200px; /* Space from the top of the overlay to the first menu item */
+  padding-left: 0; /* Reset any padding if previously set */
+  padding-right: 0; /* Reset any padding if previously set */
+  padding-bottom: 0; /* Reset any padding if previously set */
+  margin-left: 107px; /* Space from the left edge of the overlay to the text */
+  color: #faa22a; /* Yellow text color */
+  position: fixed;
+  top: 50px; /* Push content down below header */
+  width: 100%;
+  /* Full width of the overlay */
+  /* Add other styles for padding, etc. */
+}
+
+.overlay-content a {
+  font-family: "Exo 2", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff; /* Make sure the color is white */
+  text-transform: uppercase;
+  padding: 0; /* Reset any padding if previously set */
+  /* Remove bottom margin if previously set */
+  display: block; /* Each link will be on its own line */
+  white-space: nowrap;
+  text-decoration: none; /* Prevent text from wrapping */
+}
+
+.overlay-content a:hover {
+  color: #faa22a;
+}
+
+.overlay-content a span.menu-number {
+  margin-right: 20px; /* Increase the right margin to create a gap */
+  display: inline-block; /* Treat the span as a block-level element inline */
+}
+
+/* Style for the line separators */
+.overlay-content a:not(:last-child):after {
+  content: "";
+  display: block;
+  margin-top: 10px; /* Space above the line */
+  margin-bottom: 50px; /* Space below the line */
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white line */
+  margin-left: 0px;
+  width: 600px; /* Line width extends full width of overlay content */
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* Sets the container's height to fill the entire viewport */
+  /* align-items: flex-start; Aligns children at the top */
+  justify-content: space-between; /* Maintains the space distribution */
+  /* Adds a bit of space at the top if needed */
+}
+
+.text-section {
+  flex: 1; /* Takes up 1/2 of the space in the container */
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  margin-top: -160px; /* Centers content vertically */
+}
+
+.text-section h1 {
+  color: #f4b336;
+  width: 626px;
+  height: 510px;
+
+  font-family: "Exo 2", sans-serif;
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170px; /* 106.25% */
+  text-transform: uppercase;
+}
+
+.text-section h2 {
+  color: #f4b336;
+
+  font-family: "Exo 2", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170px; /* 106.25% */
+  text-transform: uppercase;
+}
+
+.image-section {
+  flex: 1; /* Takes up 1/2 of the space in the container */
+  background-color: white;
+  display: flex;
+  align-items: flex-end; /* Centers image vertically */
+  justify-content: center;
+
+  /* Centers image horizontally */
+}
+
+.image-section img {
+  width: 940px; /* Full width of the section */
+  height: 905px; /* Maintain aspect ratio */
+  max-height: 100%; /* Limit height to the container */
+}
+
+/* LEADERSHIP SECTION */
+
+.leadership-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f574e;
+  height: 100vh;
+}
+
+.leadership-section .content-column {
+  max-width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+
+  align-items: flex-start;
+  padding-top: 80px; /* Align content to start from the top */
+  /* Add padding to the top */
+}
+
+.leadership-section .content h2 {
+  width: 810px;
+  margin-top: -160px;
+  color: #fff;
+
+  font-family: "Exo 2";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 80px;
+}
+
+.leadership-section .paragraph h3 {
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Exo 2";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.leadership-section .paragraph2 h3 {
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Exo 2";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 60px;
+}
+
+.leadership-section .paragraph p {
+  width: 566px;
+  height: 197px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  padding-bottom: 20px; /* 165% */
+}
+.leadership-section .paragraph2 p {
+  width: 536px;
+  height: 167px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 165% */
+}
+.leadership-section .read-more {
+  display: block;
+  text-decoration-color: #faa22a;
+  color: #fff;
+  font-family: "Exo 2";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.leadership-section .image-column {
+  flex: 1;
+  text-align: right;
+  padding-right: 60px;
+  padding-top: 50px;
+}
+
+.leadership-section .image-column img {
+  width: 860px;
+  height: 888px;
+  object-fit: cover;
+}
