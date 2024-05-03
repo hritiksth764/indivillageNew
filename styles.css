@@ -367,7 +367,8 @@ body {
 
 .tech-forward-content {
   flex: 1;
-  padding: 80px;
+  padding-left: 80px;
+  padding-top: 60px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -401,6 +402,7 @@ body {
 }
 
 .tech-forward-grid {
+  width: 504px;
   display: flex;
   justify-content: space-between;
   align-items: left;
@@ -483,16 +485,18 @@ body {
 }
 
 .tech-forward-image {
+  flex: 0 0 860px; /* Sets the width of the image container exactly to the image width */
+  height: 904px; /* Sets the height of the image container exactly to the image height */
   display: flex;
-  padding-top: 10px;
-  /* Center the image horizontally */
+  justify-content: center; /* Center the image horizontally */
   align-items: flex-end; /* Align the image at the bottom */
-  overflow: hidden; /* Prevents overflow outside the container */
+  overflow: hidden;
+  padding-top: 80px;
+  padding-right: 60px; /* Prevents any overflow */
 }
 
 .tech-forward-image img {
-  max-width: none; /* Removes any max-width restrictions */
-  width: 100%; /* Sets the image width to fill the container */
-  height: auto; /* Keeps the image's aspect ratio intact */
-  object-fit: contain; /* Ensures the image covers the full area */
+  width: 840px; /* Exact width of the image */
+  height: 904px; /* Exact height of the image */
+  object-fit: contain; /* Ensures the image fits within the specified dimensions without cropping */
 }
