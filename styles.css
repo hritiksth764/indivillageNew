@@ -750,6 +750,121 @@ body {
 
 .tech-forward-image2 img {
   width: 840px; /* Exact width of the image */
-  height: 804px; /* Exact height of the image */
+  height: 904px; /* Exact height of the image */
   object-fit: contain; /* Ensures the image fits within the specified dimensions without cropping */
+}
+
+.tech-forward-containerlast {
+  display: flex;
+  justify-content: center; /* Centers the image container horizontally */
+  align-items: center; /* Centers the image container vertically */
+  height: 140vh; /* Full viewport height */
+  padding: 60px; /* Padding around the container */
+  box-sizing: border-box; /* Includes padding in the container's dimensions */
+  background: white; /* Background color */
+}
+
+/*stories from field*/
+.tech-forward-image-containerlast {
+  width: 1540px;
+  padding: 20px; /* Set width of the image container */
+  height: auto; /* Height adjusts automatically */
+  display: flex;
+  justify-content: center; /* Center the image horizontally within the container */
+  align-items: center; /* Center the image vertically within the container */
+  overflow: hidden; /* Prevents any overflow of the image outside the container */
+}
+
+.tech-forward-image-containerlast img {
+  max-width: 100%; /* Ensures the image does not exceed the container's width */
+  height: auto; /* Maintains the image's aspect ratio */
+  object-fit: contain; /* Ensures the image is fully visible within the container without cropping */
+}
+
+/* last section */
+.section-indivillage-container {
+  gap: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background: #1f574e;
+}
+
+.indivillage-content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.indivillage-text-section {
+  flex: 1;
+
+  color: #fff;
+}
+
+.indivillage-text-section h1 {
+  color: #fff;
+  font-family: "Exo 2";
+  font-size: 45px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.indivillage-text-section p {
+  width: 736px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 70px;
+}
+
+.indivillage-image-section {
+  margin-top: -80px;
+  width: 739px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indivillage-image-section img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.indivillage-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.indivillage-footer-item {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.indivillage-footer-item span {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.indivillage-footer-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
