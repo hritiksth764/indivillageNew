@@ -595,7 +595,7 @@ body {
   justify-content: center; /* Center the image horizontally */
   align-items: flex-end; /* Align the image at the bottom */
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-right: 60px; /* Prevents any overflow */
 }
 
@@ -744,12 +744,12 @@ body {
   justify-content: center; /* Center the image horizontally */
   align-items: flex-end; /* Align the image at the bottom */
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-right: 60px; /* Prevents any overflow */
 }
 
 .tech-forward-image2 img {
   width: 840px; /* Exact width of the image */
-  height: 904px; /* Exact height of the image */
+  height: 804px; /* Exact height of the image */
   object-fit: contain; /* Ensures the image fits within the specified dimensions without cropping */
 }
