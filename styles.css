@@ -342,10 +342,10 @@ body {
   color: #fff; /* White text color */
   line-height: 1.6; /* Adjust line height for better readability */
 
-  width: 568px;
+  width: 630px;
   height: 197px;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 33px;
@@ -534,13 +534,13 @@ body {
 }
 
 .tech-forward-overview p {
-  width: 535.102px;
+  width: 630px;
   height: 164px;
   flex-shrink: 0;
   color: rgba(255, 255, 255, 0.75);
 
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 33px; /* 165% */
@@ -548,7 +548,7 @@ body {
 }
 
 .tech-forward-overview5 p {
-  width: 640px;
+  width: 610px;
   height: auto;
   flex-shrink: 0;
   color: rgba(255, 255, 255, 0.75);
@@ -712,12 +712,12 @@ body {
 }
 
 .tech-forward-overview2 p {
-  width: 590px;
+  width: 630px;
   height: auto;
   margin-bottom: 86px;
   color: rgba(40, 40, 40, 0.75);
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 33px; /* 165% */
@@ -820,7 +820,7 @@ body {
   width: 736px;
   color: rgba(255, 255, 255, 0.75);
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 70px;
