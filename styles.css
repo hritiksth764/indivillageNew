@@ -374,12 +374,25 @@ body {
 }
 
 .tech-forward-title {
-  width: 535px;
+  width: auto;
   height: 60px;
   flex-shrink: 0;
   color: #fff;
   font-family: "Exo 2";
-  font-size: 56px;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+.tech-forward-title5 {
+  width: auto;
+  height: 60px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "Exo 2";
+  font-size: 46px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -402,6 +415,241 @@ body {
 }
 
 .tech-forward-grid {
+  width: 504px;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  text-align: left;
+}
+.tech-forward-grid5 {
+  width: 580px;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  text-align: left;
+  gap: 60px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: 50px;
+}
+
+.grid-item strong {
+  color: #f4b336;
+  font-size: 50px;
+  line-height: 1;
+  width: 27.958px;
+  height: 54px;
+  flex-shrink: 0;
+  color: #f4b336;
+
+  font-family: "Exo 2";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.grid-item5 strong {
+  color: #f4b336;
+  font-size: 50px;
+  line-height: 1;
+  width: 27.958px;
+  height: 54px;
+  flex-shrink: 0;
+  color: #f4b336;
+
+  font-family: "Exo 2";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.grid-item span {
+  width: 123.254px;
+  height: 22px;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.75);
+
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 70px; /* Capitalization for aesthetic */
+}
+.grid-item5 span {
+  width: 123.254px;
+  height: 22px;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.75);
+
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  /* Capitalization for aesthetic */
+}
+
+.tech-forward-overview h2 {
+  width: 252.52px;
+  height: 24px;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.75);
+
+  font-family: "Exo 2";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  /* Smaller font size for subheadings */
+}
+
+.tech-forward-overview5 h2 {
+  margin-top: 70px;
+  width: 252.52px;
+  height: 24px;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.75);
+
+  font-family: "Exo 2";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  /* Smaller font size for subheadings */
+}
+
+.tech-forward-overview p {
+  width: 535.102px;
+  height: 164px;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.75);
+
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 165% */
+  margin-bottom: 86px;
+}
+
+.tech-forward-overview5 p {
+  width: 640px;
+  height: auto;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 165% */
+  padding-bottom: 86px;
+}
+
+.tech-forward-overview a {
+  display: inline-block; /* Inline block for clickable area */
+  margin-top: 10px;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.65);
+
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize; /* Underline for emphasis */
+}
+
+.tech-forward-overview5 a {
+  display: inline-block; /* Inline block for clickable area */
+  margin-top: 10px;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.75);
+
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize; /* Underline for emphasis */
+}
+
+.tech-forward-image {
+  flex: 0 0 860px; /* Sets the width of the image container exactly to the image width */
+  height: 904px; /* Sets the height of the image container exactly to the image height */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: flex-end; /* Align the image at the bottom */
+  overflow: hidden;
+  padding-top: 80px;
+  padding-right: 60px; /* Prevents any overflow */
+}
+
+.tech-forward-image img {
+  width: 840px; /* Exact width of the image */
+  height: 904px; /* Exact height of the image */
+  object-fit: contain; /* Ensures the image fits within the specified dimensions without cropping */
+}
+
+/* techforward2 */
+.tech-forward-container2 {
+  display: flex;
+  height: 100vh;
+  background-color: white; /* Dark background as seen in the Figma design */
+  color: #fff; /* White text for contrast */
+}
+
+.tech-forward-content2 {
+  flex: 1;
+  padding-left: 80px;
+  padding-top: 60px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tech-forward-title2 {
+  width: auto;
+  height: 60px;
+  flex-shrink: 0;
+  margin-bottom: 64px;
+  color: #282828;
+
+  font-family: "Exo 2";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px; /* 125% */
+  text-transform: uppercase;
+}
+
+.tech-forward-impact2 h2 {
+  width: 253.522px;
+  height: 30px;
+  margin-bottom: 14px;
+  color: rgba(40, 40, 40, 0.75);
+  font-family: "Exo 2";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.tech-forward-grid2 {
   width: 504px;
   display: flex;
   justify-content: space-between;
@@ -437,22 +685,23 @@ body {
   width: 123.254px;
   height: 22px;
   flex-shrink: 0;
-  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 70px;
+  color: rgba(40, 40, 40, 0.75);
 
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-transform: capitalize;
-  margin-bottom: 70px; /* Capitalization for aesthetic */
+  text-transform: capitalize; /* Capitalization for aesthetic */
 }
 
-.tech-forward-overview h2 {
+.tech-forward-overview2 h2 {
   width: 252.52px;
   height: 24px;
   flex-shrink: 0;
-  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 24px;
+  color: rgba(40, 40, 40, 0.75);
 
   font-family: "Exo 2";
   font-size: 22px;
@@ -460,31 +709,35 @@ body {
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
-  margin-bottom: 24px;
-  /* Smaller font size for subheadings */
 }
 
-.tech-forward-overview p {
-  width: 535.102px;
-  height: 164px;
-  flex-shrink: 0;
-  color: rgba(255, 255, 255, 0.75);
-
+.tech-forward-overview2 p {
+  width: 590px;
+  height: auto;
+  margin-bottom: 86px;
+  color: rgba(40, 40, 40, 0.75);
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 33px; /* 165% */
-  margin-bottom: 86px;
+  text-transform: capitalize;
 }
 
-.tech-forward-overview a {
+.tech-forward-overview2 a {
   display: inline-block; /* Inline block for clickable area */
   margin-top: 10px;
-  text-decoration: underline; /* Underline for emphasis */
+  text-decoration: underline;
+  color: rgba(40, 40, 40, 0.75);
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize; /* Underline for emphasis */
 }
 
-.tech-forward-image {
+.tech-forward-image2 {
   flex: 0 0 860px; /* Sets the width of the image container exactly to the image width */
   height: 904px; /* Sets the height of the image container exactly to the image height */
   display: flex;
@@ -495,7 +748,7 @@ body {
   padding-right: 60px; /* Prevents any overflow */
 }
 
-.tech-forward-image img {
+.tech-forward-image2 img {
   width: 840px; /* Exact width of the image */
   height: 904px; /* Exact height of the image */
   object-fit: contain; /* Ensures the image fits within the specified dimensions without cropping */
