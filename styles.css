@@ -752,7 +752,8 @@ body {
 .tech-forward-image2 img {
   width: 840px; /* Exact width of the image */
   height: 864px; /* Exact height of the image */
-  object-fit: contain; /* Ensures the image fits within the specified dimensions without cropping */
+  object-fit: contain;
+  align-items: flex-end; /* Ensures the image fits within the specified dimensions without cropping */
 }
 
 .tech-forward-containerlast {
