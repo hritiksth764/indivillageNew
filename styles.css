@@ -589,7 +589,7 @@ body {
 }
 
 .tech-forward-image {
-  flex: 0 0 860px; /* Sets the width of the image container exactly to the image width */
+  flex: 0 0 800px; /* Sets the width of the image container exactly to the image width */
   height: 904px; /* Sets the height of the image container exactly to the image height */
   display: flex;
   justify-content: center; /* Center the image horizontally */
@@ -601,7 +601,7 @@ body {
 
 .tech-forward-image img {
   width: 840px; /* Exact width of the image */
-  height: 904px; /* Exact height of the image */
+  height: 864px; /* Exact height of the image */
   object-fit: contain; /* Ensures the image fits within the specified dimensions without cropping */
 }
 
@@ -738,7 +738,8 @@ body {
 }
 
 .tech-forward-image2 {
-  flex: 0 0 860px; /* Sets the width of the image container exactly to the image width */
+  margin-top: 5px;
+  flex: 0 0 800px; /* Sets the width of the image container exactly to the image width */
   height: 904px; /* Sets the height of the image container exactly to the image height */
   display: flex;
   justify-content: center; /* Center the image horizontally */
@@ -750,7 +751,7 @@ body {
 
 .tech-forward-image2 img {
   width: 840px; /* Exact width of the image */
-  height: 904px; /* Exact height of the image */
+  height: 864px; /* Exact height of the image */
   object-fit: contain; /* Ensures the image fits within the specified dimensions without cropping */
 }
 
