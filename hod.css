@@ -104,8 +104,11 @@ html {
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-top: 60px; /* Adds 40px padding at the top */
+  padding-left: 80px; /* Left padding */
+  padding-right: 80px; /* Right padding */
+  padding-bottom: 0; /* No padding at the bottom unless necessary */
+  height: calc(100vh - 60px);
   /* Padding as per your specification */
 }
 
@@ -180,5 +183,5 @@ html {
   bottom: 0px;
   top: auto;
   position: fixed;
-  right: 3%;
+  right: 4.5%; /* Pushes the image to the bottom */
 }
