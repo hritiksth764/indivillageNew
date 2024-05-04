@@ -29,7 +29,7 @@ html {
 .hamburger-icon {
   cursor: pointer;
   padding-top: 15px;
-  padding-right: 73px;
+  padding-right: 53px;
 }
 .logo {
   visibility: hidden; /* Hides the logo but keeps it in the document flow */
@@ -104,8 +104,9 @@ html {
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  padding-left: 60px;
-  padding-right: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+
   /* Padding as per your specification */
 }
 
