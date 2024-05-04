@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Message from Director</title>
+    <link rel="stylesheet" href="hod.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="image.png"
+        alt="Company Logo"
+        class="logo"
+        onclick="handleLogoClick()"
+      />
+      <div class="hamburger-icon" onclick="toggleNav()">☰</div>
+    </header>
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <a href="index.html#impact-overview-section" onclick="toggleNav()"
+          ><span class="menu-number">01</span> WHAT DID WE DO THIS YEAR</a
+        >
+        <a href="index.html#TechHerForward" onclick="toggleNav()"
+          ><span class="menu-number">02</span> TECH HER FORWARD</a
+        >
+        <a href="index.html#StorytellingSaturday" onclick="toggleNav()"
+          ><span class="menu-number">03</span> STORYTELLING SATURDAY</a
+        >
+
+        <a href="index.html#ArtClass" onclick="toggleNav()"
+          ><span class="menu-number">04</span> SATURDAY ART CLASS<br
+        /></a>
+        <a href="index.html#RuralYouth" onclick="toggleNav()"
+          ><span class="menu-number">05</span> RURAL YOUTH SKILLING</a
+        >
+        <a href="index.html#WomenTech" onclick="toggleNav()"
+          ><span class="menu-number">06</span> ALL WOMEN TECH CENTRES</a
+        >
+        <a href="index.html#MilestoneAndMemoir" onclick="toggleNav()"
+          ><span class="menu-number">07</span> 2023: Milestones & Memoirs</a
+        >
+        <a
+          href="http://www.indivillagefoundation.org/about-us/"
+          target="_blank"
+          onclick="toggleNav()"
+          ><span class="menu-number">08</span> About us</a
+        >
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="title">
+        Building a Stronger Foundation for Growth:
+        <br />A Message from Operations
+      </h1>
+      <div class="content">
+        <div class="column">
+          <p>
+            This year at IndiVillage Foundation has been marked by remarkable
+            growth, and a significant portion of that success can be attributed
+            to our incredible team, volunteers and partners.
+          </p>
+
+          <img
+            src="DesignHod.png"
+            alt="Hima Reddy, Director, IndiVillage Foundation"
+          />
+        </div>
+
+        <div class="column">
+          <p>
+            <span
+              style="
+                color: rgba(40, 40, 40, 0.6);
+                font-family: 'Exo 2';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+              "
+              >Building a High-Performing Team:</span
+            >
+            <br />
+            <br />We began by focusing on team capacity building. Through
+            quarterly boot camps and external workshops organized by esteemed
+            partners like Quest Alliance and Saturday Art Class, we equipped our
+            staff with the latest skills and methodologies. Additionally,
+            theater workshops fostered a deeper understanding of our creative
+            pedagogies, ensuring impactful implementation across all programs.
+          </p>
+        </div>
+        <div class="column2">
+          <p>
+            <span
+              style="
+                color: rgba(40, 40, 40, 0.6);
+                font-family: 'Exo 2';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+              "
+              >Building a High-Performing Team:</span
+            >
+            <br />
+            <br />We began by focusing on team capacity building. Through
+            quarterly boot camps and external workshops organized by esteemed
+            partners like Quest Alliance and Saturday Art Class, we equipped our
+            staff with the latest skills and methodologies. Additionally,
+            theater workshops fostered a deeper understanding of our creative
+            pedagogies, ensuring impactful implementation across all programs.
+          </p>
+          <img
+            src="HOD.png"
+            alt="Hima Reddy, Director, IndiVillage Foundation"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleNav() {
+        var overlay = document.getElementById("myNav");
+        if (overlay.style.transform === "translateX(0%)") {
+          overlay.style.transform = "translateX(100%)";
+        } else {
+          overlay.style.transform = "translateX(0%)";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -4,11 +4,6 @@ html {
   padding: 0;
   height: 100%;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -34,7 +29,7 @@ html {
 .hamburger-icon {
   cursor: pointer;
   padding-top: 15px;
-  padding-right: 53px;
+  padding-right: 73px;
 }
 .logo {
   visibility: hidden; /* Hides the logo but keeps it in the document flow */
@@ -109,10 +104,8 @@ html {
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-top: 40px;
-
+  padding-left: 60px;
+  padding-right: 60px;
   /* Padding as per your specification */
 }
 
@@ -132,7 +125,7 @@ html {
 
 .content {
   display: flex;
-  height: auto; /* Adjust based on total height and title space */
+  height: 80%; /* Adjust based on total height and title space */
   width: 100%;
   text-align: left;
 }
@@ -151,11 +144,35 @@ html {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 200%; /* 165% */
+  line-height: 30px; /* 165% */
   width: 100%;
 }
 
 .column img {
+  width: 100%; /* Makes the image fill the column width */
+  align-self: flex-end; /* Aligns the image to the bottom of the column */
+  margin-top: auto; /* Pushes the image to the bottom */
+}
+
+.column2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Aligns the text at the top and the image at the bottom */
+  padding: 0 20px; /* Padding inside each column */
+}
+
+.column2 p {
+  color: rgba(40, 40, 40, 0.65);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 165% */
+  width: 100%;
+}
+
+.column2 img {
   padding-top: 0px;
   align-self: flex-end;
   margin-top: auto;
