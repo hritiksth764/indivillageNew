@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Message from Director</title>
+    <link rel="stylesheet" href="director.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="image.png"
+        alt="Company Logo"
+        class="logo"
+        onclick="handleLogoClick()"
+      />
+      <div class="hamburger-icon" onclick="toggleNav()">☰</div>
+    </header>
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <a href="index.html#impact-overview-section" onclick="toggleNav()"
+          ><span class="menu-number">01</span> WHAT DID WE DO THIS YEAR</a
+        >
+        <a href="index.html#TechHerForward" onclick="toggleNav()"
+          ><span class="menu-number">02</span> TECH HER FORWARD</a
+        >
+        <a href="index.html#StorytellingSaturday" onclick="toggleNav()"
+          ><span class="menu-number">03</span> STORYTELLING SATURDAY</a
+        >
+
+        <a href="index.html#ArtClass" onclick="toggleNav()"
+          ><span class="menu-number">04</span> SATURDAY ART CLASS<br
+        /></a>
+        <a href="index.html#RuralYouth" onclick="toggleNav()"
+          ><span class="menu-number">05</span> RURAL YOUTH SKILLING</a
+        >
+        <a href="index.html#WomenTech" onclick="toggleNav()"
+          ><span class="menu-number">06</span> ALL WOMEN TECH CENTRES</a
+        >
+        <a href="index.html#MilestoneAndMemoir" onclick="toggleNav()"
+          ><span class="menu-number">07</span> 2023: Milestones & Memoirs</a
+        >
+        <a
+          href="http://www.indivillagefoundation.org/about-us/"
+          target="_blank"
+          onclick="toggleNav()"
+          ><span class="menu-number">08</span> About us</a
+        >
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="title">MESSAGE FROM DIRECTOR</h1>
+      <div class="content">
+        <div class="column">
+          <p>
+            Motivated by a collective aspiration for self-improvement,
+            marginalized women in Kymore, Madhya Pradesh, and Bassi, Rajasthan
+            articulated a pressing need for English language proficiency.
+            Responding to their earnest aspirations, IndiVillage Foundation,
+            IndiVillage Tech Solutions, Adani Foundation, and Ekakanya Trust
+            united to deliver English language training through weekly sessions
+            facilitated by Queen's English.
+            <br />
+            <br />The hallmark of this year lies in our remarkable expansion of
+            impact on the ground. Our impact numbers for 2022-23 was 4309
+            participants compared to 23,771 in this year. At the heart of our
+            success lies the fundamental shift in mindset- from incremental to
+            exponential.
+            <br />
+            <br />We have not only grown in numbers but also transformed into a
+            very effective and efficient organisation. One of the most
+            remarkable aspects of this year has been the incredible spirit of
+            community engagement and participation that we received at every
+            level. Individuals from grassroots communities came together in a
+            spirit of collaboration, generously volunteering their time, skills
+            and resources to support our cause, and eventually increasing the
+            number of volunteers from forty two, to hundred and fifty eight.
+          </p>
+          <p></p>
+        </div>
+
+        <div class="column">
+          <p>
+            None of this would be possible without support from IndiVillage
+            (IV). Not only IV provides us with the financial resources to run
+            our programs, but they also provide unwavering support and
+            commitment for the upliftment of rural youth in India. They have
+            been the cornerstone of our foundation. We would like to give a
+            shout out to the Machani group, which incubated IndiVillage and
+            provided it with support to soar to new heights.
+            <br />
+
+            <br />Despite the challenges and several new undertakings, the
+            quality of our programs remains intact, continues to grow, and
+            impact even larger number of people.
+            <br />
+            <br />We have developed our own curriculum for Storytelling
+            Saturdays aligned with the current National Education Policy of
+            India. Furthermore we emphasised concrete and measurable metrics to
+            analyse base line end line data.
+            <br />
+            <br />None of this would be possible without support from Indi
+            Village (I.V). Not only I.V provides us with the financial resources
+            to run our programs, but they also provide unwavering support and
+            commitment for the upliftment of rural youth in India. They have
+            been the cornerstone of our foundation. We would like to give a
+            shout out to the machani
+          </p>
+        </div>
+        <div class="column">
+          <p>
+            group, which incubated IndiVillage and provided it with support to
+            soar to new heights.
+            <br />
+            <br />Thank you for being a part of our journey, for your continued
+            support, and for sharing our vision of exponential mindset & growth.
+            As we gaze into the future, we are filled with optimism and
+            determination.
+            <br />
+            <br />
+            <br />As we gaze into the future, we are filled with optimism and
+            determination. There is still much work to be done, many challenges
+            to overcome and countless lives to touch.
+          </p>
+          <img
+            src="Hima.png"
+            alt="Hima Reddy, Director, IndiVillage Foundation"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleNav() {
+        var overlay = document.getElementById("myNav");
+        if (overlay.style.transform === "translateX(0%)") {
+          overlay.style.transform = "translateX(100%)";
+        } else {
+          overlay.style.transform = "translateX(0%)";
+        }
+      }
+    </script>
+  </body>
+</html>
