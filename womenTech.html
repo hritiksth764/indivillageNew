@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investing in Women, Investing in Communities</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="womenTech.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="image.png"
+        alt="Company Logo"
+        class="logo"
+        onclick="handleLogoClick()"
+      />
+      <div class="hamburger-icon" onclick="toggleNav()">☰</div>
+    </header>
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <a href="index.html#impact-overview-section" onclick="toggleNav()"
+          ><span class="menu-number">01</span> WHAT DID WE DO THIS YEAR</a
+        >
+        <a href="index.html#TechHerForward" onclick="toggleNav()"
+          ><span class="menu-number">02</span> TECH HER FORWARD</a
+        >
+        <a href="index.html#StorytellingSaturday" onclick="toggleNav()"
+          ><span class="menu-number">03</span> STORYTELLING SATURDAY</a
+        >
+        <a href="index.html#ArtClass" onclick="toggleNav()"
+          ><span class="menu-number">04</span> SATURDAY ART CLASS</a
+        >
+        <a href="index.html#RuralYouth" onclick="toggleNav()"
+          ><span class="menu-number">05</span> RURAL YOUTH SKILLING</a
+        >
+        <a href="index.html#WomenTech" onclick="toggleNav()"
+          ><span class="menu-number">06</span> ALL WOMEN TECH CENTRES</a
+        >
+        <a href="index.html#MilestoneAndMemoir" onclick="toggleNav()"
+          ><span class="menu-number">07</span> 2023: Milestones & Memoirs</a
+        >
+        <a
+          href="http://www.indivillagefoundation.org/about-us/"
+          target="_blank"
+          onclick="toggleNav()"
+          ><span class="menu-number">08</span> About us</a
+        >
+      </div>
+    </div>
+    <div class="section-wrapper">
+      <h1 class="section-title">
+        Investing in Women, Investing in Communities:
+        <br />Addressing the Need for English Skills
+      </h1>
+      <div class="image-container">
+        <img src="image copy 13.png" alt="Group of Women" />
+      </div>
+      <!-- <div class="three-columns">
+        <div class="column">
+          <h2>Promoting Foundational Literacy</h2>
+          <p> 
+            Saturday Art Classes use Visual Arts and Social-Emotional Learning
+            to empower children in a safe space. College volunteers, trained
+            through our "Rural Path" program, lead the sessions, gaining
+            valuable skills while expanding children's access to art education.
+          </p>
+        </div>
+        <div class="column">
+          <h2>Sessions Covered</h2>
+          <p>
+            Engaging art sessions were conducted across nine schools. Activities
+            fostered fine motor skills, gross motor skills, critical thinking,
+            imagination, and self-awareness. Examples include: Flower Drawing,
+            Animal Drawing, Self-Portrait, and Finger Painting.
+          </p>
+        </div>
+        <div class="column">
+          <h2>Testimonial</h2>
+          <p>
+            "Teaching enthusiastic students and witnessing their creativity
+            flourish each week has been truly inspiring. I'm really grateful to
+            be a part of the program and I enjoyed it a lot with the students. I
+            also learned so much from them. This experience has reinforced my
+            passion for teaching and art."
+          </p>
+        </div>
+      </div> -->
+      <div class="svg-separator">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="auto"
+          height="2"
+          viewBox="0 0 1762 2"
+          fill="none"
+        >
+          <path
+            d="M1 1L1761 0.999846"
+            stroke="#282828"
+            stroke-opacity="0.4"
+            stroke-width="0.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <div class="testimonial-video-container">
+        <div class="testimonial">
+          <h1>Testimonial</h1>
+          <p>
+            “ It is really a very big opportunity to improve myself as a leader
+            and create an environment for other women in my community to do
+            better for themselves and their families ”
+          </p>
+          <div class="testimonial-sign">
+            Ekta Singh,
+            <br />Team Lead, IndiVillage Tech Solutions, <br />Kymore
+            Centre,Madhya Pradesh
+          </div>
+        </div>
+        <div class="video-container">
+          <video controls width="100%">
+            <source src="videos/Ekta AIR.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleNav() {
+        var overlay = document.getElementById("myNav");
+        if (overlay.style.transform === "translateX(0%)") {
+          overlay.style.transform = "translateX(100%)";
+        } else {
+          overlay.style.transform = "translateX(0%)";
+        }
+      }
+    </script>
+  </body>
+</html>
