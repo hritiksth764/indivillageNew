@@ -40,44 +40,35 @@ body {
 /* Overlay style */
 .overlay {
   transform: translateX(100%); /* Start off screen */
-  width: 50%; /* Or whatever width you desire */
+  width: 50%; /* Adjusted width */
   height: 100%; /* Full height */
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1; /* Make sure it's above other content */
+  z-index: 1; /* Ensure it's above other content */
   background: #282828; /* Background color */
   transition: transform 0.5s ease; /* Smooth transition for opening/closing */
-  /* Other styles... */
 }
 
-/* Style for the menu items in the overlay */
 .overlay-content {
-  padding-top: 200px; /* Space from the top of the overlay to the first menu item */
-  padding-left: 0; /* Reset any padding if previously set */
-  padding-right: 0; /* Reset any padding if previously set */
-  padding-bottom: 0; /* Reset any padding if previously set */
-  margin-left: 107px; /* Space from the left edge of the overlay to the text */
-  color: #faa22a; /* Yellow text color */
-  position: fixed;
-  top: 50px; /* Push content down below header */
+  overflow-y: auto; /* Allows scrolling if content is too long */
+  position: absolute; /* Changed from fixed to absolute */
+  top: 80px; /* Positioning adjusted */
   width: 100%;
-  /* Full width of the overlay */
-  /* Add other styles for padding, etc. */
+  padding: 20px 107px 20px 107px; /* Adjusted for padding */
+  box-sizing: border-box; /* Includes padding in width */
+  color: #faa22a; /* Yellow text color */
 }
 
 .overlay-content a {
   font-family: "Exo 2", sans-serif;
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
-  color: #fff; /* Make sure the color is white */
+  color: #fff;
   text-transform: uppercase;
-  padding: 0; /* Reset any padding if previously set */
-  /* Remove bottom margin if previously set */
-  display: block; /* Each link will be on its own line */
-  white-space: nowrap;
-  text-decoration: none; /* Prevent text from wrapping */
+  display: block;
+  margin-bottom: 20px; /* Space between items */
+  text-decoration: none;
 }
 
 .overlay-content a:hover {
@@ -85,8 +76,18 @@ body {
 }
 
 .overlay-content a span.menu-number {
-  margin-right: 20px; /* Increase the right margin to create a gap */
-  display: inline-block; /* Treat the span as a block-level element inline */
+  margin-right: 20px;
+  display: inline-block;
+}
+
+/* Redefine the pseudo-element to avoid adding it to the last item */
+.overlay-content a:not(:last-child)::after {
+  content: "";
+  display: block;
+  margin: 20px 0; /* Adjusted margin for visual consistency */
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white line */
+  width: 100%; /* Line stretches full width */
 }
 
 /* Style for the line separators */
@@ -1217,11 +1218,10 @@ body {
   background: #1f574e; /* Removes any border if present */
 }
 .full-width-image {
-  padding-left: 80px;
-  width: 1509px; /* Full width to match the grid-container */
+  width: calc(100vw - 160px); /* Match the width of the grid-container */
   height: auto; /* Height is automatic to maintain aspect ratio */
-  margin-top: 40px;
-  margin-bottom: 40px; /* Adds space between the grid and the image */
+  margin: 40px auto; /* Top and bottom margin 40px, auto for horizontal centering */
+  display: block; /* Ensures the image is a block-level element for margin auto */
 }
 
 .full-width-image2 {
