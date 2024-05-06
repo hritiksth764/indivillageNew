@@ -98,8 +98,10 @@ html {
 }
 
 .section-wrapper {
-  max-width: 1488px; /* Set the max-width of the section */
+  box-sizing: border-box;
+  width: calc(100vw-160px); /* Full width to contain the image */
   padding-left: 80px;
+  padding-right: 80px;
   /* 80px margin on top and bottom, centered horizontally */
   /* 20px padding on top and bottom, 80px on left and right */
   background-color: #fff; /* Background color for visibility */
@@ -218,8 +220,8 @@ html {
 
 .video-container {
   position: relative;
-  width: 800px; /* Adjusted to fit your specific dimensions */
-  height: 600px; /* Height as specified */
+  width: 768px; /* Adjusted to fit your specific dimensions */
+  height: 412px; /* Height as specified */
   border-radius: 10px; /* Rounded corners as requested */
   overflow: hidden; /* Ensures nothing spills out of the border radius */
   display: flex;
@@ -228,7 +230,7 @@ html {
 }
 
 video {
-  width: 100%; /* Ensures the video covers the entire width of the container */
-  height: 100%; /* Covers the height, adjusted to maintain aspect ratio if needed */
+  width: 768px; /* Ensures the video covers the entire width of the container */
+  height: 412px; /* Covers the height, adjusted to maintain aspect ratio if needed */
   object-fit: cover; /* Ensures the video covers the space without distortion */
 }
