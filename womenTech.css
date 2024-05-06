@@ -98,8 +98,11 @@ html {
 }
 
 .section-wrapper {
-  max-width: 1488px; /* Set the max-width of the section */
+  box-sizing: border-box;
+  width: calc(100vw-160px); /* Full width to contain the image */
   padding-left: 80px;
+  padding-right: 80px; /* Set the max-width of the section */
+  height: auto;
   /* 80px margin on top and bottom, centered horizontally */
   /* 20px padding on top and bottom, 80px on left and right */
   background-color: #fff; /* Background color for visibility */
@@ -123,7 +126,7 @@ html {
   width: 100%; /* Full width to contain the image */
   display: flex;
   justify-content: center;
-  margin-bottom: 20px; /* Center the image horizontally */
+  /* Center the image horizontally */
 }
 
 .image-container img {
