@@ -112,8 +112,8 @@ html {
   padding-top: 40px; /* Adds 40px padding at the top */
   box-sizing: border-box;
   width: calc(100vw-160px); /* Full width to contain the image */
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
 
   /* Padding as per your specification */
 }
