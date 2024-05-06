@@ -104,9 +104,9 @@ html {
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  padding-top: 60px; /* Adds 40px padding at the top */
-  padding-left: 80px; /* Left padding */
-  padding-right: 80px; /* Right padding */
+  padding-top: 20px; /* Adds 40px padding at the top */
+  padding-left: 60px; /* Left padding */
+  padding-right: 60px; /* Right padding */
   padding-bottom: 0; /* No padding at the bottom unless necessary */
   height: calc(100vh - 60px);
   /* Padding as per your specification */

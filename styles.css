@@ -1104,6 +1104,7 @@ body {
 }
 
 .indivillage-footer-item {
+  margin-top: 90px;
   display: flex;
   align-items: center;
   margin-right: 90px;
