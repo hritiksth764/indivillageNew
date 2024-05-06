@@ -982,7 +982,7 @@ body {
   justify-content: center; /* Centers the image container horizontally */
   align-items: center; /* Centers the image container vertically */
   height: 140vh; /* Full viewport height */
-  padding: 60px; /* Padding around the container */
+  padding: 80px; /* Padding around the container */
   box-sizing: border-box; /* Includes padding in the container's dimensions */
   background: white; /* Background color */
 }
@@ -990,7 +990,7 @@ body {
 /*stories from field*/
 .tech-forward-image-containerlast {
   width: 1540px;
-  padding: 20px; /* Set width of the image container */
+  /* Set width of the image container */
   height: auto; /* Height adjusts automatically */
   display: flex;
   justify-content: center; /* Center the image horizontally within the container */
@@ -1189,8 +1189,24 @@ body {
 }
 .full-width-image {
   padding-left: 80px;
-  width: 90.5%; /* Full width to match the grid-container */
+  width: 1509px; /* Full width to match the grid-container */
   height: auto; /* Height is automatic to maintain aspect ratio */
   margin-top: 40px;
   margin-bottom: 40px; /* Adds space between the grid and the image */
+}
+
+.full-width-image2 {
+  padding-left: 10px;
+  width: 99%; /* Full width to match the grid-container */
+  height: auto; /* Height is automatic to maintain aspect ratio */
+  /* Adds space between the grid and the image */
+}
+
+.full-width-image3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 80px;
+  width: 91%; /* Full width to match the grid-container */
+  height: auto; /* Height is automatic to maintain aspect ratio */
+  /* Adds space between the grid and the image */
 }
