@@ -1221,7 +1221,7 @@ body {
 .full-width-image {
   width: calc(100vw - 160px); /* Match the width of the grid-container */
   height: auto; /* Height is automatic to maintain aspect ratio */
-  margin: 40px auto; /* Top and bottom margin 40px, auto for horizontal centering */
+  margin: 10px auto; /* Top and bottom margin 40px, auto for horizontal centering */
   display: block; /* Ensures the image is a block-level element for margin auto */
 }
 
