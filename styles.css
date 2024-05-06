@@ -982,14 +982,14 @@ body {
   justify-content: center; /* Centers the image container horizontally */
   align-items: center; /* Centers the image container vertically */
   height: 140vh; /* Full viewport height */
-  padding: 80px; /* Padding around the container */
-  box-sizing: border-box; /* Includes padding in the container's dimensions */
+  /* Padding around the container */
+  /* Includes padding in the container's dimensions */
   background: white; /* Background color */
 }
 
 /*stories from field*/
 .tech-forward-image-containerlast {
-  width: 1540px;
+  width: 98.7%;
   /* Set width of the image container */
   height: auto; /* Height adjusts automatically */
   display: flex;
@@ -999,7 +999,7 @@ body {
 }
 
 .tech-forward-image-containerlast img {
-  max-width: 100%; /* Ensures the image does not exceed the container's width */
+  width: 100%; /* Ensures the image does not exceed the container's width */
   height: auto; /* Maintains the image's aspect ratio */
   object-fit: contain; /* Ensures the image is fully visible within the container without cropping */
 }
@@ -1076,7 +1076,7 @@ body {
 .indivillage-footer-item {
   display: flex;
   align-items: center;
-  margin-right: 40px;
+  margin-right: 90px;
 }
 
 .indivillage-footer-item span {
