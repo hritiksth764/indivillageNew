@@ -352,12 +352,24 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 33px;
-  padding-bottom: 20px; /* 165%  /* Space below paragraphs */
+  padding-bottom: 10px; /* 165%  /* Space below paragraphs */
 }
 
 .leadership-section .read-more {
-  color: #faa22a; /* Color for 'Read More' links */
+  /* Color for 'Read More' links */
   text-decoration: none;
+  display: inline-block; /* Inline block for clickable area */
+
+  text-decoration: underline;
+  text-decoration-color: #f4b336;
+  color: rgba(255, 255, 255, 0.65);
+
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize; /* Underline for emphasis */
   /* Remove underline from links */
 }
 
@@ -433,6 +445,20 @@ body {
   text-transform: uppercase;
 }
 
+.tech-forward-container .tech-forward-grid .grid-item span {
+  width: 123.254px;
+  height: 22px;
+  flex-shrink: 0;
+  margin-bottom: 70px;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
 .tech-forward-overview h2 {
   width: 252.52px;
   height: 24px;
@@ -473,13 +499,14 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 33px; /* 165% */
-  margin-bottom: 86px;
+  margin-bottom: 66px;
 }
 
 .tech-forward-overview a {
   display: inline-block; /* Inline block for clickable area */
-  margin-top: 10px;
+
   text-decoration: underline;
+  text-decoration-color: #f4b336;
   color: rgba(255, 255, 255, 0.65);
 
   font-family: "Exo 2";
@@ -630,13 +657,13 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 33px; /* 165% */
-  margin-bottom: 86px;
+  margin-bottom: 66px;
 }
 
 .tech-forward-overview6 a {
   display: inline-block; /* Inline block for clickable area */
-  margin-top: 10px;
   text-decoration: underline;
+  text-decoration-color: #f4b336;
   color: rgba(255, 255, 255, 0.65);
 
   font-family: "Exo 2";
@@ -790,8 +817,9 @@ body {
 
 .tech-forward-overview2 a {
   display: inline-block; /* Inline block for clickable area */
-  margin-top: 10px;
+
   text-decoration: underline;
+  text-decoration-color: #f4b336;
   color: rgba(40, 40, 40, 0.75);
   font-family: "Exo 2";
   font-size: 20px;
@@ -934,7 +962,7 @@ body {
 .tech-forward-overview5 p {
   width: 630px;
   height: auto;
-  margin-bottom: 86px;
+  margin-bottom: 66px;
   color: rgba(40, 40, 40, 0.75);
   font-family: Montserrat;
   font-size: 18px;
@@ -946,8 +974,9 @@ body {
 
 .tech-forward-overview5 a {
   display: inline-block; /* Inline block for clickable area */
-  margin-top: 10px;
+
   text-decoration: underline;
+  text-decoration-color: #f4b336;
   color: rgba(40, 40, 40, 0.75);
   font-family: "Exo 2";
   font-size: 20px;
@@ -1046,11 +1075,11 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .indivillage-image-section {
-  margin-top: -80px;
+  margin-top: -50px;
   width: 739px;
   display: flex;
   justify-content: center;
