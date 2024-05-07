@@ -21,7 +21,7 @@ html {
   width: 80px;
   height: 50px;
   flex-shrink: 0;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-left: 80px;
   visibility: hidden;
 }
@@ -239,11 +239,10 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 180px;
 }
 
 video {
-  width: 100%; /* Ensures the video covers the entire width of the container */
-  height: 100%; /* Covers the height, adjusted to maintain aspect ratio if needed */
+  width: 768px; /* Ensures the video covers the entire width of the container */
+  height: 412px; /* Covers the height, adjusted to maintain aspect ratio if needed */
   object-fit: cover; /* Ensures the video covers the space without distortion */
 }
