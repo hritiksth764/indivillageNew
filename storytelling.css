@@ -1,0 +1,196 @@
+.body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center; /* Make the header fixed to the top */
+  width: 100%; /* Full width */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  /* Adjust the horizontal padding as needed */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  background-color: transparent; /* Optional: Background color for the header */
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.logo {
+  width: 80px;
+  height: 50px;
+  flex-shrink: 0;
+  padding-top: 20px;
+  padding-left: 80px;
+  visibility: hidden;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  padding-top: 15px;
+  padding-right: 73px;
+  width: 20px;
+}
+
+.hamburger-icon svg path {
+  fill: #282828; /* Default color */
+}
+
+/* Style for the hamburger icon when the overlay is open */
+.hamburger-icon.open svg path {
+  fill: #ffffff; /* Change to the desired color */
+}
+
+/* Overlay style */
+.overlay {
+  transform: translateX(100%); /* Start off screen */
+  width: 50%; /* Adjusted width */
+  height: 100%; /* Full height */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1; /* Ensure it's above other content */
+  background: #282828; /* Background color */
+  transition: transform 0.5s ease; /* Smooth transition for opening/closing */
+}
+
+.overlay-content {
+  overflow-y: auto; /* Allows scrolling if content is too long */
+  position: absolute; /* Changed from fixed to absolute */
+  top: 80px; /* Positioning adjusted */
+  width: 100%;
+  padding: 20px 107px 20px 107px; /* Adjusted for padding */
+  box-sizing: border-box; /* Includes padding in width */
+  color: #faa22a; /* Yellow text color */
+}
+
+.overlay-content a {
+  font-family: "Exo 2", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px; /* Space between items */
+  text-decoration: none;
+}
+
+.overlay-content a:hover {
+  color: #faa22a;
+}
+
+.overlay-content a span.menu-number {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+/* Redefine the pseudo-element to avoid adding it to the last item */
+.overlay-content a:not(:last-child)::after {
+  content: "";
+  display: block;
+  margin: 20px 0; /* Adjusted margin for visual consistency */
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white line */
+  width: 100%; /* Line stretches full width */
+}
+
+/* Style for the line separators */
+.overlay-content a:not(:last-child):after {
+  content: "";
+  display: block;
+  margin-top: 10px; /* Space above the line */
+  margin-bottom: 50px; /* Space below the line */
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white line */
+  margin-left: 0px;
+  width: 600px; /* Line width extends full width of overlay content */
+}
+
+.testimonial-video-container {
+  margin-top: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 180px;
+  display: flex;
+  justify-content: space-between; /* Space between testimonial and video */
+  gap: 20px; /* Gap between the two columns */
+}
+
+.testimonial,
+.video-container {
+  flex: 1; /* Each takes half of the space */
+}
+
+.testimonial h1 {
+  color: rgba(40, 40, 40, 0.65);
+  margin-top: 0px;
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.testimonial p {
+  width: 510px;
+  height: auto;
+  color: rgba(40, 40, 40, 0.75);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  /* Italicize the testimonial text */
+}
+
+.testimonial-author {
+  display: block; /* Block display for correct alignment */
+  /* Space above the author's name */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+.testimonial-sign {
+  width: 480px;
+  font-size: 16px;
+  height: auto;
+  background: #f4b336; /* Yellow background */
+  color: white; /* White text color */
+  font-family: "Montserrat", sans-serif; /* Font family */
+  padding: 10px 20px; /* Padding inside the box */
+  margin-top: 20px; /* Space above the sign-off */
+  display: inline-block; /* Make the div only as wide as its content */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.video-container {
+  position: relative;
+  width: 960px; /* Adjusted to fit your specific dimensions */
+  height: 412px; /* Height as specified */
+  border-radius: 10px; /* Rounded corners as requested */
+  overflow: hidden; /* Ensures nothing spills out of the border radius */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 960px; /* Ensures the video covers the entire width of the container */
+  height: 412px; /* Covers the height, adjusted to maintain aspect ratio if needed */
+  object-fit: contain; /* Ensures the video covers the space without distortion */
+}
+
+/* new-container */
+.impact-overviewtech .impact-imageArt {
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes any inline behavior */
+  margin: 0 auto; /* Center the image */
+  padding-top: 60px;
+  padding-left: 80px;
+  padding-right: 80px; /* Top padding */
+  padding-bottom: 0px; /* Bottom padding */
+  box-sizing: border-box;
+  background-color: transparent; /* Padding included in the element's dimensions */
+}
