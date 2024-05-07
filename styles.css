@@ -38,6 +38,15 @@ body {
   width: 20px;
 }
 
+.hamburger-icon svg path {
+  fill: #282828; /* Default color */
+}
+
+/* Style for the hamburger icon when the overlay is open */
+.hamburger-icon.open svg path {
+  fill: #ffffff; /* Change to the desired color */
+}
+
 /* Overlay style */
 .overlay {
   transform: translateX(100%); /* Start off screen */
@@ -150,18 +159,16 @@ body {
   flex: 1; /* Takes up 1/2 of the space in the container */
   background-color: white;
   display: flex;
-
   align-items: flex-end; /* Centers image vertically */
-  justify-content: center;
-
-  /* Centers image horizontally */
+  justify-content: flex-end; /* Aligns image to the right */
 }
 
 .image-section img {
-  width: 940px; /* Full width of the section */
+  width: 958px; /* Full width of the section */
   height: 805px; /* Maintain aspect ratio */
   max-height: 100%;
-  object-fit: contain; /* Limit height to the container */
+  object-fit: contain;
+  margin-left: auto; /* Limit height to the container */
 }
 
 /* LEADERSHIP SECTION 
@@ -1146,8 +1153,8 @@ body {
 
 .impact h1 {
   padding-left: 80px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   color: #282828;
 
   font-family: "Exo 2";

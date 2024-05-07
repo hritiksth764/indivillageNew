@@ -37,6 +37,7 @@
         <svg
           width="38"
           height="48"
+          z-index="101"
           viewBox="0 0 48 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +45,7 @@
           <path
             d="M8 36C7.43333 36 6.95833 35.8083 6.575 35.425C6.19167 35.0417 6 34.5667 6 34C6 33.4333 6.19167 32.9583 6.575 32.575C6.95833 32.1917 7.43333 32 8 32H40C40.5667 32 41.0417 32.1917 41.425 32.575C41.8083 32.9583 42 33.4333 42 34C42 34.5667 41.8083 35.0417 41.425 35.425C41.0417 35.8083 40.5667 36 40 36H8ZM8 26C7.43333 26 6.95833 25.8083 6.575 25.425C6.19167 25.0417 6 24.5667 6 24C6 23.4333 6.19167 22.9583 6.575 22.575C6.95833 22.1917 7.43333 22 8 22H40C40.5667 22 41.0417 22.1917 41.425 22.575C41.8083 22.9583 42 23.4333 42 24C42 24.5667 41.8083 25.0417 41.425 25.425C41.0417 25.8083 40.5667 26 40 26H8ZM8 16C7.43333 16 6.95833 15.8083 6.575 15.425C6.19167 15.0417 6 14.5667 6 14C6 13.4333 6.19167 12.9583 6.575 12.575C6.95833 12.1917 7.43333 12 8 12H40C40.5667 12 41.0417 12.1917 41.425 12.575C41.8083 12.9583 42 13.4333 42 14C42 14.5667 41.8083 15.0417 41.425 15.425C41.0417 15.8083 40.5667 16 40 16H8Z"
             fill="#282828"
-            fill-opacity="0.5"
+            fill-opacity="1"
           />
         </svg>
       </div>
@@ -90,7 +91,7 @@
         <h2>2023-24</h2>
       </div>
       <div class="image-section">
-        <img src="Cover Image (1).png" alt="Descriptive Image" />
+        <img src="Cover Final.png" alt="Descriptive Image" />
       </div>
     </div>
     <section class="leadership-section" data-aos="fade-down">
@@ -387,7 +388,7 @@
     </div>
     <div class="tech-forward-containerlast" data-aos="fade-down">
       <div class="tech-forward-image-containerlast">
-        <img src="Stories from the Field.png" alt="Tech Her Forward" />
+        <img src="Stories from the Field (1).png" alt="Tech Her Forward" />
       </div>
     </div>
     <!-- <img
@@ -458,11 +459,17 @@
     </div>
     <script>
       function toggleNav() {
-        var overlay = document.getElementById("myNav");
-        if (overlay.style.transform === "translateX(0%)") {
-          overlay.style.transform = "translateX(100%)";
+        var nav = document.getElementById("myNav");
+        var hamburgerIcon = document.querySelector(".hamburger-icon");
+
+        if (nav.style.transform === "translateX(100%)") {
+          // Overlay is closed, open it
+          nav.style.transform = "translateX(0)";
+          hamburgerIcon.classList.add("open"); // Add the "open" class to the hamburger icon
         } else {
-          overlay.style.transform = "translateX(0%)";
+          // Overlay is open, close it
+          nav.style.transform = "translateX(100%)";
+          hamburgerIcon.classList.remove("open"); // Remove the "open" class from the hamburger icon
         }
       }
       function handleLogoClick() {
