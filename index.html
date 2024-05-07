@@ -55,9 +55,9 @@
         <a href="index.html#home" onclick="toggleNav()"
           ><span class="menu-number">01</span> HOME
         </a>
-        <a href="index.html#impact-overview-section" onclick="toggleNav()"
-          ><span class="menu-number">02</span> WHAT DID WE DO THIS YEAR</a
-        >
+        <a href="#impact-overview-section" onclick="smoothScroll(event)">
+          <span class="menu-number">02</span> WHAT DID WE DO THIS YEAR
+        </a>
         <a href="index.html#TechHerForward" onclick="toggleNav()"
           ><span class="menu-number">03</span> TECH HER FORWARD</a
         >
@@ -529,6 +529,20 @@
       }
       function redirectToWomenTech() {
         window.location.href = "womenTech.html";
+      }
+      function smoothScroll(event) {
+        event.preventDefault();
+        const targetId = event.currentTarget.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth",
+          });
+
+          // Close the overlay after scrolling
+          toggleNav();
+        }
       }
 
       // Pause the video when the page is loaded
