@@ -153,11 +153,17 @@
     </div>
     <script>
       function toggleNav() {
-        var overlay = document.getElementById("myNav");
-        if (overlay.style.transform === "translateX(0%)") {
-          overlay.style.transform = "translateX(100%)";
+        var nav = document.getElementById("myNav");
+        var hamburgerIcon = document.querySelector(".hamburger-icon");
+
+        if (nav.style.transform === "translateX(100%)") {
+          // Overlay is closed, open it
+          nav.style.transform = "translateX(0)";
+          hamburgerIcon.classList.add("open"); // Add the "open" class to the hamburger icon
         } else {
-          overlay.style.transform = "translateX(0%)";
+          // Overlay is open, close it
+          nav.style.transform = "translateX(100%)";
+          hamburgerIcon.classList.remove("open"); // Remove the "open" class from the hamburger icon
         }
       }
     </script>
