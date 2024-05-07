@@ -1202,37 +1202,40 @@ body {
 
 .half-box {
   display: flex;
-  height: 100%; /* Full height of the container */
-  width: 100%; /* Full width of the container */
-  border-radius: 10px; /* Rounded corners for the box */
-  overflow: hidden; /* Ensures no child element overflows the rounded corners */
-}
-
-.half-box div,
-.half-box img {
-  flex: 1; /* Ensures each child takes up equal space */
-  height: 100%; /* Full height */
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .half-box div {
+  flex: 1;
   display: flex;
-  align-items: center; /* Center text vertically */
-  justify-content: center; /* Center text horizontally */
-  padding: 10px; /* Padding inside the text box */
-  font-size: 1.5vw; /* Responsive font size */
-  text-align: center;
-  background: #1f574e; /* Black background for text */
-  color: white; /* White text color */
-  margin: 0; /* Remove margin if any */
-  box-sizing: border-box; /* Includes padding and border in width */
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+  padding-right: 80px;
+  background: #1f574e;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.half-box div .highlight {
+  font-size: 2vw; /* Bigger font for numbers */
+}
+
+.half-box div span.sub-text {
+  font-size: 1.2vw; /* Font size for subtext */
 }
 
 .half-box img {
-  object-fit: cover; /* Cover the designated area */
-  width: 100%; /* Ensures width is set correctly for flex child */
+  object-fit: cover;
+  width: 100%;
   border: none;
-  background: #1f574e; /* Removes any border if present */
+  background-color: #1f574e;
 }
+
 .full-width-image {
   width: calc(100vw - 160px); /* Match the width of the grid-container */
   height: auto; /* Height is automatic to maintain aspect ratio */
@@ -1254,4 +1257,29 @@ body {
   width: 91%; /* Full width to match the grid-container */
   height: auto; /* Height is automatic to maintain aspect ratio */
   /* Adds space between the grid and the image */
+}
+
+.number-style {
+  padding-top: 20px;
+  color: #f4b336;
+  font-family: "Exo 2";
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: #1f574e;
+}
+
+.text-style {
+  display: inline-block;
+  color: #fff;
+
+  font-family: Montserrat;
+  width: 170px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 150% */
+  text-transform: capitalize;
 }
