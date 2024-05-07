@@ -104,7 +104,7 @@ html {
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  padding-top: 20px; /* Adds 40px padding at the top */
+  padding-top: 40px; /* Adds 40px padding at the top */
   padding-left: 60px; /* Left padding */
   padding-right: 60px; /* Right padding */
   padding-bottom: 0; /* No padding at the bottom unless necessary */
@@ -114,7 +114,7 @@ html {
 
 .title {
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #282828;
 
   font-family: "Exo 2";
@@ -152,7 +152,8 @@ html {
 }
 
 .column img {
-  width: 100%; /* Makes the image fill the column width */
+  width: 100%;
+  height: auto; /* Makes the image fill the column width */
   align-self: flex-end; /* Aligns the image to the bottom of the column */
   margin-top: auto; /* Pushes the image to the bottom */
 }
