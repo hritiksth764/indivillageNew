@@ -1272,14 +1272,14 @@ body {
 }
 
 .text-style {
-  display: inline-block;
+  /* display: inline-block; */
   color: #fff;
 
   font-family: Montserrat;
   width: 170px;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px; /* 150% */
+  line-height: 18px; /* 150% */
   text-transform: capitalize;
 }
