@@ -156,15 +156,29 @@ html {
 }
 
 .column h2 {
-  font-size: 24px;
-  color: #1f574e;
   margin-bottom: 15px;
+  color: rgba(40, 40, 40, 0.75);
+
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
-.column p {
+.column p,
+li {
   font-size: 18px;
   line-height: 1.6;
   color: #333;
+  color: rgba(40, 40, 40, 0.75);
+
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 165% */
 }
 
 .svg-separator {
