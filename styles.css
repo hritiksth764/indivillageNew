@@ -1028,6 +1028,7 @@ body {
 
 /*stories from field*/
 .tech-forward-image-containerlast {
+  padding-bottom: 60px;
   width: 98.7%;
   /* Set width of the image container */
   height: auto; /* Height adjusts automatically */
@@ -1116,7 +1117,7 @@ body {
   margin-top: 90px;
   display: flex;
   align-items: center;
-  margin-right: 90px;
+  margin-right: 130px;
 }
 .indivillage-footer-item a {
   text-decoration: underline;
