@@ -11,8 +11,8 @@ body {
 }
 .site-header {
   display: flex;
-  justify-content: space-between;
-  position: fixed;
+  justify-content: flex-end; /* Align the hamburger icon to the right */
+  position: relative;
   align-items: center; /* Make the header fixed to the top */
   width: 100%; /* Full width */
   top: 0; /* Align to the top */
@@ -23,19 +23,28 @@ body {
   z-index: 1000; /* Ensure the header is above other content */
 }
 
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
+  padding-left: 80px;
+  z-index: 1001; /* Ensure the logo is above the menu icon */
+}
+
 .logo {
   width: 80px;
   height: 50px;
   flex-shrink: 0;
-  padding-top: 30px;
-  padding-left: 80px;
 }
 
 .hamburger-icon {
   cursor: pointer;
-  padding-top: 15px;
-  padding-right: 73px;
+  position: fixed;
+  top: 15px; /* Adjust as needed */
+  right: 80px; /* Adjust as needed */
   width: 20px;
+  z-index: 1001; /* Ensure the menu icon is above the logo */
 }
 
 /* Style for the hamburger icon when the overlay is open */
