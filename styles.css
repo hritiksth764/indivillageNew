@@ -165,9 +165,9 @@ body {
 }
 
 .image-section img {
-  width: 958px; /* Full width of the section */
+  width: auto; /* Full width of the section */
   height: 805px; /* Maintain aspect ratio */
-  max-height: 100%;
+
   object-fit: contain;
   margin-left: auto; /* Limit height to the container */
 }
