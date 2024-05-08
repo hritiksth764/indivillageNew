@@ -162,7 +162,8 @@ html {
 }
 
 .column img {
-  width: 100%;
+  padding-right: 100px;
+  width: 80%;
   height: auto; /* Makes the image fill the column width */
   align-self: flex-end; /* Aligns the image to the bottom of the column */
   margin-top: auto; /* Pushes the image to the bottom */
