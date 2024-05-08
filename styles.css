@@ -6,21 +6,19 @@
 html,
 body {
   height: 100%;
-
-  /* font-family: Arial, sans-serif; */
 }
 .site-header {
   display: flex;
-  justify-content: flex-end; /* Align the hamburger icon to the right */
+  justify-content: flex-end;
   position: relative;
-  align-items: center; /* Make the header fixed to the top */
-  width: 100%; /* Full width */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  /* Adjust the horizontal padding as needed */
-  box-sizing: border-box; /* Include padding in the width calculation */
-  background-color: transparent; /* Optional: Background color for the header */
-  z-index: 1000; /* Ensure the header is above other content */
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  box-sizing: border-box;
+  background-color: transparent;
+  z-index: 1000;
 }
 
 .logo-container {
@@ -41,15 +39,15 @@ body {
 .hamburger-icon {
   cursor: pointer;
   position: fixed;
-  top: 15px; /* Adjust as needed */
-  right: 60px; /* Adjust as needed */
+  top: 15px;
+  right: 60px;
   width: 20px;
-  z-index: 1001; /* Ensure the menu icon is above the logo */
+  z-index: 1001;
 }
 
 /* Style for the hamburger icon when the overlay is open */
 .hamburger-icon.open svg path {
-  fill: #ffffff; /* Change to the desired color */
+  fill: #ffffff;
 }
 
 /* Overlay style */
@@ -120,9 +118,7 @@ body {
 .container {
   display: flex;
   height: 100vh; /* Sets the container's height to fill the entire viewport */
-  /* align-items: flex-start; Aligns children at the top */
   justify-content: space-between; /* Maintains the space distribution */
-  /* Adds a bit of space at the top if needed */
 }
 
 .text-section {
@@ -1218,8 +1214,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 10px;
-  padding-right: 80px;
+  padding-left: 30px;
+  padding-right: 40px;
   background: #1f574e;
   color: white;
   margin: 0;
@@ -1277,14 +1273,14 @@ body {
 }
 
 .text-style {
+  margin-top: -10px;
   /* display: inline-block; */
   color: #fff;
 
   font-family: Montserrat;
-  width: 170px;
+  width: 200px;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 18px; /* 150% */
-  text-transform: capitalize;
+  line-height: 21px; /* 150% */
 }
