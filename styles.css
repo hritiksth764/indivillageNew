@@ -42,7 +42,7 @@ body {
   cursor: pointer;
   position: fixed;
   top: 15px; /* Adjust as needed */
-  right: 80px; /* Adjust as needed */
+  right: 60px; /* Adjust as needed */
   width: 20px;
   z-index: 1001; /* Ensure the menu icon is above the logo */
 }
