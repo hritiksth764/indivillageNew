@@ -24,6 +24,7 @@ body {
 }
 
 .logo-container {
+  position: fixed;
   top: 0;
   left: 0;
   padding-top: 30px;
@@ -32,7 +33,7 @@ body {
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   width: 80px;
   height: 50px;
   flex-shrink: 0;
@@ -42,7 +43,7 @@ body {
   cursor: pointer;
   position: fixed; /* Change to absolute */
   top: 15px; /* Adjust as needed */
-  right: 65px; /* Adjust as needed */
+  right: 60px; /* Adjust as needed */
   width: 20px;
   z-index: 1001; /* Ensure the menu icon is above the logo */
 }
