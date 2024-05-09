@@ -105,8 +105,8 @@ html {
 .overlay-content a:not(:last-child):after {
   content: "";
   display: block;
-  margin-top: 10px; /* Space above the line */
-  margin-bottom: 50px; /* Space below the line */
+  margin-top: 25px; /* Space above the line */
+  margin-bottom: 25px; /* Space below the line */
   height: 0.5px;
   background: rgba(255, 255, 255, 0.5); /* Semi-transparent white line */
   margin-left: 0px;
