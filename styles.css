@@ -335,7 +335,7 @@ body {
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
-  padding-bottom: 40px; /* Spacing below the headings */
+  padding-bottom: 0px; /* Spacing below the headings */
 }
 .leadership-section h3 {
   color: #fff; /* White text color */
@@ -349,6 +349,7 @@ body {
   line-height: normal;
   text-transform: uppercase;
   padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .leadership-section p {
@@ -356,17 +357,33 @@ body {
   line-height: 1.6; /* Adjust line height for better readability */
 
   width: 630px;
-  height: 197px;
+  height: auto;
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 33px;
-  padding-bottom: 10px; /* 165%  /* Space below paragraphs */
+  padding-bottom: 40px; /* 165%  /* Space below paragraphs */
+}
+
+.leadership-section .paragraph2 p {
+  color: #fff; /* White text color */
+  line-height: 1.6; /* Adjust line height for better readability */
+
+  width: 630px;
+  height: auto;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  padding-bottom: 40px;
+  /* 165%  /* Space below paragraphs */
 }
 
 .leadership-section .read-more {
   /* Color for 'Read More' links */
+  padding-bottom: 40px;
   text-decoration: none;
   display: inline-block; /* Inline block for clickable area */
 
