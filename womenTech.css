@@ -231,6 +231,24 @@ html {
   border-radius: 10px; /* Rounded corners */
 }
 
+.testimonial-sign .name {
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.testimonial-sign .name2 {
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .video-container {
   margin-bottom: 120px;
   position: relative;
