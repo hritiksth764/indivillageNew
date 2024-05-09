@@ -616,7 +616,15 @@ body {
 .tech-forward-grid6 {
   width: 580px;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+  grid-template-columns: 1fr 2fr; /* Two columns of equal width */
+  grid-gap: 0px; /* Space between columns */
+  margin-top: 20px; /* Space above the grid */
+}
+
+.tech-forward-grid7 {
+  width: 580px;
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two columns of equal width */
   grid-gap: 0px; /* Space between columns */
   margin-top: 20px; /* Space above the grid */
 }
