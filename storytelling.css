@@ -114,7 +114,7 @@ html {
   margin-bottom: 180px;
   display: flex;
   justify-content: space-between; /* Space between testimonial and video */
-  gap: 20px; /* Gap between the two columns */
+  gap: 0px; /* Gap between the two columns */
 }
 
 .testimonial,
@@ -152,8 +152,9 @@ html {
 }
 
 .testimonial-sign {
+  line-height: 24px;
   width: 480px;
-  font-size: 16px;
+  font-size: 18px;
   height: auto;
   background: #f4b336; /* Yellow background */
   color: white; /* White text color */
@@ -161,12 +162,31 @@ html {
   padding: 10px 20px; /* Padding inside the box */
   margin-top: 20px; /* Space above the sign-off */
   display: inline-block; /* Make the div only as wide as its content */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.testimonial-sign .name {
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.testimonial-sign .name2 {
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .video-container {
+  margin-bottom: 120px;
   position: relative;
-  width: 960px; /* Adjusted to fit your specific dimensions */
+  width: 980px; /* Adjusted to fit your specific dimensions */
   height: 412px; /* Height as specified */
   border-radius: 10px; /* Rounded corners as requested */
   overflow: hidden; /* Ensures nothing spills out of the border radius */
@@ -176,9 +196,9 @@ html {
 }
 
 video {
-  width: 960px; /* Ensures the video covers the entire width of the container */
+  width: 880px; /* Ensures the video covers the entire width of the container */
   height: 412px; /* Covers the height, adjusted to maintain aspect ratio if needed */
-  object-fit: contain; /* Ensures the video covers the space without distortion */
+  object-fit: cover; /* Ensures the video covers the space without distortion */
 }
 
 /* new-container */
