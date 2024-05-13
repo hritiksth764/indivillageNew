@@ -1060,7 +1060,8 @@ body {
 
 /*stories from field*/
 .tech-forward-image-containerlast {
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 98.7%;
   /* Set width of the image container */
   height: auto; /* Height adjusts automatically */
