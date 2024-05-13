@@ -183,11 +183,11 @@ li {
   width: 100%; /* Adjust width as necessary */
   display: flex;
   justify-content: center; /* Center the SVG horizontally */
-  margin: 80px 0; /* 40px space above and below the separator */
+  margin: 100px 0; /* 40px space above and below the separator */
 }
 
 .testimonial-video-container {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-between; /* Space between testimonial and video */
   gap: 20px; /* Gap between the two columns */
@@ -277,10 +277,10 @@ video {
   object-fit: cover; /* Ensures the video covers the space without distortion */
 }
 
-.video-container {
+.image-container2 {
   position: relative;
   width: 768px; /* Adjusted to fit your specific dimensions */
-  height: 412px; /* Height as specified */
+  height: auto; /* Height as specified */
   border-radius: 10px; /* Rounded corners as requested */
   overflow: hidden; /* Ensures nothing spills out of the border radius */
   display: flex;
