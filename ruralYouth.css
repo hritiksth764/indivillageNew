@@ -326,7 +326,7 @@ video {
 }
 
 .new-container .text-image-section img {
-  width: 110%; /* Full width of the container */
+  width: 115%; /* Full width of the container */
   height: auto; /* Maintain aspect ratio */
   margin-top: 20px;
 }
