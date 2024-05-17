@@ -1081,17 +1081,17 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-left: 80px;
   padding-right: 80px;
+  padding-bottom: -20px !important;
   background: #1f574e;
 }
 
 .indivillage-content {
-  margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  height: auto;
 }
 
 .indivillage-text-section {
@@ -1103,7 +1103,7 @@ body {
 .indivillage-text-section h1 {
   color: #fff;
   font-family: "Exo 2";
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
@@ -1114,21 +1114,23 @@ body {
   width: 736px;
   color: rgba(255, 255, 255, 0.75);
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 60px;
 }
 
 .indivillage-image-section {
-  margin-top: -50px;
-  width: 739px;
+  width: 740px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 .indivillage-image-section img {
+  border-radius: 10px;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -1144,12 +1146,12 @@ body {
   color: #fff;
 }
 
-.indivillage-footer-item {
+/* .indivillage-footer-item {
   margin-top: 90px;
   display: flex;
   align-items: center;
   margin-right: 130px;
-}
+} */
 .indivillage-footer-item a {
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -1159,6 +1161,45 @@ body {
   display: flex; /* Ensures the layout inside the link remains flex */
   align-items: center; /* Aligns items vertically in the center */
 }
+
+.indivillage-text-section h3 {
+  width: 720px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.indivillage-text-section ul li {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #fff;
+  text-decoration-thickness: 1px; /* Removes underline from links */
+  color: inherit; /* Inherits color from parent for consistent styling */
+  display: flex; /* Ensures the layout inside the link remains flex */
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.indivillage-text-section ul li a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #fff;
+  text-decoration-thickness: 1px;
+  color: inherit;
+}
+
+.indivillage-text-section ul img {
+  width: 26px;
+  height: auto;
+  margin-right: 10px;
+}
+
 .indivillage-footer-item span {
   font-family: Montserrat;
   font-size: 16px;
@@ -1170,6 +1211,11 @@ body {
   width: 24px;
   height: 24px;
   margin-right: 10px;
+}
+
+.contact-list .separator {
+  margin: 15px 0;
+  width: 484px; /* Equal space above and below the separator */
 }
 
 /* impact-overview */
