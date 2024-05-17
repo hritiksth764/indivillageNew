@@ -1050,7 +1050,7 @@ body {
   display: flex;
   justify-content: center; /* Centers the image container horizontally */
   align-items: center; /* Centers the image container vertically */
-  height: 140vh; /* Full viewport height */
+  height: auto; /* Full viewport height */
   /* Padding around the container */
   /* Includes padding in the container's dimensions */
   background: white; /* Background color */
@@ -1058,11 +1058,10 @@ body {
 
 /*stories from field*/
 .tech-forward-image-containerlast {
-  padding-top: 40px;
-  padding-bottom: 40px;
   width: 98.7%;
   /* Set width of the image container */
-  height: auto; /* Height adjusts automatically */
+  height: auto;
+  padding-bottom: 60px; /* Height adjusts automatically */
   display: flex;
   justify-content: center; /* Center the image horizontally within the container */
   align-items: center; /* Center the image vertically within the container */
@@ -1073,7 +1072,7 @@ body {
   width: 100%; /* Ensures the image does not exceed the container's width */
   height: auto; /* Maintains the image's aspect ratio */
   object-fit: contain;
-  margin-bottom: 80px; /* Ensures the image is fully visible within the container without cropping */
+  /* Ensures the image is fully visible within the container without cropping */
 }
 
 /* last section */
@@ -1128,7 +1127,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  padding-top: 20px;
+  padding-top: 14px;
 }
 
 .indivillage-image-section img {
@@ -1170,8 +1169,8 @@ body {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
-  line-height: normal;
-  margin-bottom: 40px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .indivillage-text-section ul li {
@@ -1222,7 +1221,7 @@ body {
 }
 
 .contact-list .separator {
-  margin: 8px 0;
+  margin: 10px 0;
   width: 576px; /* Equal space above and below the separator */
 }
 
