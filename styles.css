@@ -1096,7 +1096,7 @@ body {
 
 .indivillage-text-section {
   flex: 1;
-
+  padding-top: 20px;
   color: #fff;
 }
 
