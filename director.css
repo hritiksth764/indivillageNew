@@ -91,6 +91,15 @@ html {
   display: inline-block;
 }
 
+.overlay-content a span.language-skills {
+  display: block; /* Ensures the element starts on a new line */
+  margin-left: 55px; /* Adjust the margin as needed to ensure consistency */
+}
+
+.overlay-content a span {
+  display: inline-block; /* Ensure other span elements are inline-block */
+}
+
 /* Redefine the pseudo-element to avoid adding it to the last item */
 .overlay-content a:not(:last-child)::after {
   content: "";
