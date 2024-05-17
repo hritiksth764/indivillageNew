@@ -587,7 +587,7 @@ body {
 
 .tech-forward-title6 {
   width: auto;
-  height: 60px;
+  height: auto;
   flex-shrink: 0;
   color: #fff;
   font-family: "Exo 2";
@@ -1072,7 +1072,8 @@ body {
 .tech-forward-image-containerlast img {
   width: 100%; /* Ensures the image does not exceed the container's width */
   height: auto; /* Maintains the image's aspect ratio */
-  object-fit: contain; /* Ensures the image is fully visible within the container without cropping */
+  object-fit: contain;
+  margin-bottom: 80px; /* Ensures the image is fully visible within the container without cropping */
 }
 
 /* last section */
@@ -1116,23 +1117,24 @@ body {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
-  line-height: normal;
-  margin-bottom: 60px;
+  line-height: 30px;
+  margin-bottom: 40px;
 }
 
 .indivillage-image-section {
   width: 735px;
-  height: 752px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  padding-top: 20px;
 }
 
 .indivillage-image-section img {
   border-radius: 10px;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 782px;
   object-fit: contain;
 }
 
@@ -1186,7 +1188,7 @@ body {
   display: flex; /* Ensures the layout inside the link remains flex */
   align-items: center;
   font-family: Montserrat;
-  font-size: 14px;
+
   font-weight: 400;
   line-height: normal;
 }
@@ -1197,6 +1199,7 @@ body {
   text-decoration-color: rgba(255, 255, 255, 0.75);
   text-decoration-thickness: 0.8px;
   color: inherit;
+  font-size: 18px;
 }
 
 .indivillage-text-section ul img {
