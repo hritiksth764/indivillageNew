@@ -1103,7 +1103,7 @@ body {
 .indivillage-text-section h1 {
   color: #fff;
   font-family: "Exo 2";
-  font-size: 38px;
+  font-size: 45px;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
@@ -1114,15 +1114,15 @@ body {
   width: 736px;
   color: rgba(255, 255, 255, 0.75);
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 60px;
 }
 
 .indivillage-image-section {
-  width: 740px;
-  height: auto;
+  width: 735px;
+  height: 752px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1166,7 +1166,7 @@ body {
   width: 720px;
   color: rgba(255, 255, 255, 0.75);
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 40px;
@@ -1219,7 +1219,7 @@ body {
 }
 
 .contact-list .separator {
-  margin: 15px 0;
+  margin: 8px 0;
   width: 484px; /* Equal space above and below the separator */
 }
 
